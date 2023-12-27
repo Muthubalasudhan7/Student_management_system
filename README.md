@@ -1,70 +1,129 @@
-# Getting Started with Create React App
+# Student Management Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
 
-## Available Scripts
+This project is mainly used to handle the student data in an efficient way using React Js, Node Js, Express Js, Mysql.
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+1. [Project Structure](#project-structure)
+2. [Dependencies](#dependencies)
+3. [Installation](#installation)
+4. [Usage](#usage)
+5. [Components](#components)
+6. [API Integration](#api-integration)
+7. [Styling](#styling)
+8. [Contributing](#contributing)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 1. Project Structure <a name="project-structure"></a>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+There are three directories in this project :
 
-### `npm test`
+1. /components
+2. /server
+3. /public
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The /components directory contains individual React components that make up the user interface of this application.
+The /server directory contains server-side logic for this application. 
+The /public directory is a place to store static assets like images, which can be accessed directly by the browser.
+App.js: This is the main entry point of your React application. It likely renders and organizes the main structure of this application.
 
-### `npm run build`
+```
+/src
+  /components
+    - AddStudentForm.js
+    - DeleteModal.js
+    - Login.js
+    - StudentList.js
+    - AddStudentForm.css
+    - Login.css
+    - DeleteModal.css
+    - StudentList.css
+- App.js
+/server
+    - index.js
+/public
+    - calender.png
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 2. Dependencies <a name="dependencies"></a>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Frontend Dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    "axios": "^1.6.2",
+    "date-fns": "^3.0.6",
+    "react": "^18.2.0",
+    "react-datepicker": "^4.25.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.12.0",
+    "react-router-dom": "^6.21.1",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4",
+    "@fortawesome/fontawesome-free": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0"
 
-### `npm run eject`
+Backend Dependencies:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mysql": "^2.18.1"
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 3. Installation <a name="installation"></a>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Clone the repository
+git clone https://github.com/Muthubalasudhan7/Student_management_system
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Navigate to the project directory
+cd student_management_system
 
-## Learn More
+# Install dependencies
+npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 4. Usage <a name="usage"></a>
 
-### Code Splitting
+# Run the development server
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 5. Components <a name="components"></a>
 
-### Analyzing the Bundle Size
+  AddStudentForm: Form for adding/editing student details.
+  DatePicker: Component for date picking.
+  DeleteModal: Modal for confirming student deletion.
+  StudentList: Component displaying the list of students.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 6. API Integration <a name="api-integration"></a>
 
-### Making a Progressive Web App
+Base URL: http://localhost:3001
+Endpoints:
+    GET /students: Retrieve the list of students.
+    GET /students/:id: Retrieve details of a specific student.
+    POST /students: Add a new student.
+    PUT /students/:id: Update an existing student.
+    DELETE /students/:id: Delete a student.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 7. Styling <a name="styling"></a>
 
-### Advanced Configuration
+### Font Awesome Icons
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This project utilizes Font Awesome for scalable vector icons. The following dependencies are used for incorporating Font Awesome icons into the project:
 
-### Deployment
+- `@fortawesome/fontawesome-free`: Version `^6.5.1`
+  - The core Font Awesome package providing fundamental functionality.
+  
+- `@fortawesome/free-solid-svg-icons`: Version `^6.5.1`
+  - Includes a set of free solid icons from Font Awesome, which are used for various graphical elements in the project.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- `@fortawesome/react-fontawesome`: Version `^0.2.0`
+  - A React component for Font Awesome icons, facilitating the integration of icons into React components seamlessly.
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 8. Contributing <a name="Contributing"></a>
+
+Feel free to customize the content, add more sections, or remove any sections that may not be relevant to your project.
+
