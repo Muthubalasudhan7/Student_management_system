@@ -1,0 +1,43 @@
+/* DatePicker.css */
+
+.custom-datepicker-container {
+  position: relative;
+  display: inline-block;
+}
+
+.date-input-container {
+  display: inline-block;
+}
+
+.date-picker-wrapper {
+  position: absolute;
+  bottom: 20;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  z-index: 999;
+}
+
+.custom-datepicker-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 5px 30px;
+}
+
+.custom-datepicker-btn {
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.custom-datepicker-btn:hover {
+  background-color: #0056b3;
+}
+
+  

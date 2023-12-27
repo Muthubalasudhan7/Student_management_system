@@ -1,0 +1,126 @@
+/* src/components/StudentList.css */
+
+.student-list-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-x: hidden;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+  }
+
+  tbody tr {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  th, td {
+    /* border: 1px solid #ddd; */
+    padding: 38px;
+    text-align: center;
+    vertical-align: middle; 
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+  }
+ 
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+
+  /* Apply styles to the first child (ID column) */
+td:first-child {
+    font-weight: bold;
+    width: 5px;
+}
+  
+  td:nth-child(2) {
+    width: 100px; 
+  }
+
+  td:nth-child(3) {
+    width: 100px; 
+  }
+
+  td:nth-child(4) {
+    width: 90px; 
+  }
+
+  td:nth-child(5) {
+    width: 150px; 
+  }
+
+  td:nth-child(6) {
+    width: 120px; 
+  }
+
+  td:nth-child(7) {
+    width: 130px; 
+  }
+
+  td:nth-child(8) {
+    width: 90px; 
+  }
+
+  td:nth-child(8) {
+    width: 90px; 
+  }
+
+  .edit-icon {
+    color: #007bff;
+    margin-right: 5px; 
+    cursor: pointer;
+  }
+  
+  .delete-icon {
+    color: red;
+    margin-right: 5px; 
+    cursor: pointer;
+  }
+
+  .filter-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100%; 
+  }
+
+  .filter-input {
+    display: flex;
+    align-items: center;
+    width: 30%; /* Adjust the width of the filter input */
+  }
+  
+  input {
+    flex-grow: 1;
+    padding: 9px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .search-icon {
+    cursor: pointer;
+    z-index: 0;
+    margin-left: -48px;
+    margin-top: -7px;
+    color: #9b9fa3;
+  }
+
+  .add-button {
+    padding: 10px 32px;
+    border: none;
+    border-radius: 20px; /* Add border-radius for a capsule-like appearance */
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+  }
+  

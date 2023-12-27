@@ -1,0 +1,94 @@
+/* src/components/AddStudentForm.css */
+
+.form-container {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .back-icon {
+    cursor: pointer;
+    margin: 10px 10px;
+  }
+
+  .heading{
+    margin-left: 40px;
+    margin-bottom: 30px;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    flex-basis: 45%;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    flex-basis: 50%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-right: 25px;
+  }
+
+  .datepicker-container {     
+    flex-basis: 50%;
+    margin-right: 36px;
+} 
+
+.datepicker-container input {
+  width: 150%;
+}
+
+.date-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* .date-input-wrapper input {
+  width: calc(100% - 30px);
+  padding-right: 30px;
+} */
+
+.datepicker-container input {
+  width: calc(150% - 30px); 
+  padding-right: 30px;
+  background-image: url('/public/calendar.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-position-x: 280px;
+  background-size: 20px; /* Adjust the size of the icon as needed */
+}
+
+/* Hide the default arrow on date input in some browsers */
+.datepicker-container input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+  textarea {
+    height: 90px;
+    margin-right: 25px;
+    flex-basis: 150%;
+    padding: 8px;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+    
+  .add-student-button {
+    margin-top: 15px;
+    margin-left: 270px;
+    padding: 10px 32px;
+    border: none;
+    border-radius: 20px;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+  }  
